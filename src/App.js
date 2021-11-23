@@ -15,6 +15,7 @@ class App extends Component {
         <h1 style={styles.title}>Las tecnologias del Front</h1>
         <ul style={styles.list}>
           {/* Tu codigo va aca */}
+					{ this.state.list.map((el, index) => <li key={index}>{el}</li>) }
         </ul>
       </div>
     );
